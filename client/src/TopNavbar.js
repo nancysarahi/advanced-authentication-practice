@@ -12,6 +12,9 @@ const TopNavbar = (props) => {
         </Nav>
         <Nav pullRight>
           <Link to="/secret"><Navbar.Text>Secret</Navbar.Text></Link>
+          <Link to="/dogs"><Navbar.Text>Dogs</Navbar.Text></Link>
+          <Link to="/cats"><Navbar.Text>Cats</Navbar.Text></Link>
+          <Link to="/bunnies"><Navbar.Text>Bunnies</Navbar.Text></Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
