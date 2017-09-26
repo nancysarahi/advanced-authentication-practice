@@ -9,7 +9,7 @@ import authenticationRoutes from "./routes/AuthenticationRoutes";
 
 mongoose.set("debug", true);
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/authentication-practice");
+mongoose.connect("mongodb://nancysarahi:nancysarahi@ds149134.mlab.com:49134/authentication-practice");
 
 const app = express();
 
@@ -37,6 +37,15 @@ app.get("/api/canigetthis", function (req, res) {
   res.send("You got the data. You are authenticated");
 });
 app.get("/api/secret", function (req, res) {
+  res.send(`The current user is ${req.user.username}`);
+});
+app.get("/api/dogs", function (req, res) {
+  res.send(`The current user is ${req.user.username}`);
+});
+app.get("/api/bunnies", function (req, res) {
+  res.send(`The current user is ${req.user.username}`);
+});
+app.get("/api/cats", function (req, res) {
   res.send(`The current user is ${req.user.username}`);
 });
 

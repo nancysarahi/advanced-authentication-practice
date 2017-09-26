@@ -1,5 +1,5 @@
 import express from "express";
-import {signUp,signIn} from "../controllers/AuthenticationController";
+import {signUp, signIn, bunnies, cats, dogs} from "../controllers/AuthenticationController";
 import passport from "passport";
 import "../services/passport";
 

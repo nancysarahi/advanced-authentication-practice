@@ -3,10 +3,10 @@ import bcrypt from "bcrypt-nodejs";
 import jwt from "jwt-simple";
 
 export function signIn(req, res) {
-  
   console.log("logged in now");
   res.json({ token: tokenForUser(req.user)});
 }
+
 export function signUp(req, res, next) {
   const { username, password } = req.body;
   let u = username;
